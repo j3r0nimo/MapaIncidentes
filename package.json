@@ -1,0 +1,21 @@
+{
+  "name": "backend_grupo_14",
+  "version": "1.0.0",
+  "description": "Backend Grupo 14",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "mock": "json-server --watch db.json --port 3001"
+  },
+  "author": "Grupo 14",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
