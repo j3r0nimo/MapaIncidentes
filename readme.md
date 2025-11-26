@@ -1,4 +1,4 @@
-# MOCK de API REST de incidentes de tránsito en el Partido de Coronel Rosales
+# MOCK de API de incidentes de tránsito en Coronel Rosales
 
 ## Objetivo general
 
