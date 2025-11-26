@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Form, Button, Row, Col, Table, Container, Alert } from "react-bootstrap";
+import { Form, Button, Row, Col, Table, Container } from "react-bootstrap";
 
 const Administracion = () => {
     const BASE_URL = "http://localhost:3001/incidentes";
