@@ -2,7 +2,7 @@
 
 ## Objetivo general
 
-Desarrollo de una aplicación web que permita visualizar, filtrar y representar gráficamente los incidentes viales ocurridos en el Partido de Coronel Rosales.
+Desarrollar una aplicación web que permita visualizar, filtrar y representar gráficamente los incidentes viales del Partido de Coronel Rosales.
 
 ## Alcance y limitaciones
 
