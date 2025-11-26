@@ -6,12 +6,12 @@ export async function FetchIncidentes(page = 1, limit = 5, keyword = "") {
 
     if (!res.ok) throw new Error("Error al conectar con el servidor");
 
-    let allData = await res.json();
+    let datos = await res.json();
 
     if (keyword && keyword.trim() !== "") {
       const lowerKey = keyword.toLowerCase();
 
-      allData = allData.filter(item => {
+      datos = datos.filter(item => {
         const enTitulo = item.incidente?.toLowerCase().includes(lowerKey);
         const enDesc = item.descripcion?.toLowerCase().includes(lowerKey);
         const enVehiculo = item.vehiculo?.toLowerCase().includes(lowerKey);
@@ -22,13 +22,15 @@ export async function FetchIncidentes(page = 1, limit = 5, keyword = "") {
       });
     }
 
+    const totalCount = datos.length;
+
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
-    const paginatedData = allData.slice(startIndex, endIndex);
+    const paginatedData = datos.slice(startIndex, endIndex);
 
     return {
       data: paginatedData,
-      total: allData.length
+      total: totalCount
     };
 
   } catch (error) {
@@ -36,7 +38,6 @@ export async function FetchIncidentes(page = 1, limit = 5, keyword = "") {
     return { data: [], total: 0 };
   }
 }
-
 // todos los incidentes, hasta el valor de 2000
 export async function FetchMapaJitterData() {
   const res = await fetch(`${BASE_URL}/incidentes`);

@@ -5,9 +5,7 @@
   "description": "Backend Grupo 14",
   "type": "module",
   "scripts": {
-    "vite": "vite",
-    "server": "json-server --watch db.json --port 3001",
-    "dev": "concurrently \"npm run server\" \"npm run vite\"",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix "
@@ -37,7 +35,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.5.0",
-    "json-server": "^1.0.0-beta.3",
     "vite": "^7.1.6"
   }
 }
