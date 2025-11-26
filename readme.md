@@ -10,7 +10,7 @@ La idea a desarrollar se centra en la recolección y visualización de incidente
 
 ## API REST Mock
 
-En el estadío de "Prototipo", se trabaja en un Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando únicamente un archivo JSON para simular una base de datos.
+En el estadío de "Prototipo" del proyectoZ, se trabaja en un Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando únicamente un archivo JSON para simular una base de datos.
 
 ## Instalación e inicio
 
