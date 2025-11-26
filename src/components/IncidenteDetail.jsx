@@ -27,7 +27,7 @@ export default function IncidenteDetalle() {
       }
     };
     getIncidentesById();
-  }, [id]);                                                                // no puede estar vacío, debe contener el id
+  }, [id]);
 
 
 
@@ -78,7 +78,7 @@ export default function IncidenteDetalle() {
                 <b>Mapa:</b>{" "}
                 {incidente.posicion?.lat && incidente.posicion?.lng ? (
                   <a
-                    href={`https://www.google.com/maps?q=$${incidente.posicion.lat},${incidente.posicion.lng}`}
+                    href={`https://www.google.com/maps?q=${incidente.posicion.lat},${incidente.posicion.lng}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

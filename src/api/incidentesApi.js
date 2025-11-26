@@ -1,15 +1,40 @@
 const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 
-// Lista de incidentes, de a 20 valores
-export async function FetchIncidentes(page = 1, limit = 20, keyword = "") {
-  const queryParams = new URLSearchParams({
-    _page: page,
-    _limit: limit,
-    q: keyword
-  }).toString();
-  const res = await fetch(`${BASE_URL}/incidentes?${queryParams}`);
-  if (!res.ok) throw new Error("Failed to fetch incidents");
-  return res.json();
+export async function FetchIncidentes(page = 1, limit = 5, keyword = "") {
+  try {
+    const res = await fetch(`${BASE_URL}/incidentes`);
+
+    if (!res.ok) throw new Error("Error al conectar con el servidor");
+
+    let allData = await res.json();
+
+    if (keyword && keyword.trim() !== "") {
+      const lowerKey = keyword.toLowerCase();
+
+      allData = allData.filter(item => {
+        const enTitulo = item.incidente?.toLowerCase().includes(lowerKey);
+        const enDesc = item.descripcion?.toLowerCase().includes(lowerKey);
+        const enVehiculo = item.vehiculo?.toLowerCase().includes(lowerKey);
+        const enPatente = item.patente?.toLowerCase().includes(lowerKey);
+        const enDireccion = item.direccion?.toLowerCase().includes(lowerKey);
+
+        return enTitulo || enDesc || enVehiculo || enPatente || enDireccion;
+      });
+    }
+
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedData = allData.slice(startIndex, endIndex);
+
+    return {
+      data: paginatedData,
+      total: allData.length
+    };
+
+  } catch (error) {
+    console.error("Fetch Error:", error);
+    return { data: [], total: 0 };
+  }
 }
 
 // todos los incidentes, hasta el valor de 2000

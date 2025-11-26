@@ -76,5 +76,3 @@ export function MarkerCluster({ incidentes }) {
 
   return null;
 }
-
-//export default MarkerCluster;

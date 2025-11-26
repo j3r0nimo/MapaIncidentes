@@ -5,6 +5,8 @@ import IncidenteDetalle from "./components/IncidenteDetail";
 import MapaJitterIncidentes from "./pages/MapaJitter";
 import MapaClusterIncidentes from "./pages/MapaCluster";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LoginAdmin from "./pages/login";
+import NuevoIncidente from "./pages/administracion";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
               <Nav.Link as={Link} to="/incidentes">Incidentes</Nav.Link>
               <Nav.Link as={Link} to="/incidentes/mapa-jitter">Mapa Jitter</Nav.Link>
               <Nav.Link as={Link} to="/incidentes/mapa-cluster">Mapa Cluster</Nav.Link>
+              <Nav.Link as={Link} to="/acceso-interno">Login </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -28,6 +31,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<h2>Welcome to Skynet Frontend</h2>} />
+          <Route path="/acceso-interno" element={<LoginAdmin />} />
+          <Route path="/administracion" element={< NuevoIncidente/>} />
           <Route path="/incidentes" element={<IncidentesLista />} />
           <Route path="/incidentes/:id" element={<IncidenteDetalle />} />
           <Route path="/incidentes/mapa-jitter" element={<MapaJitterIncidentes />} />
