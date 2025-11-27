@@ -23,9 +23,7 @@ Por medio de una ventana de terminal en un editor de código, como ser Visual St
 - npm install
 - npm run mock
 
-La API es plenamente funcional, por ejemplo en modo local en http://localhost:3000/incidentes
-
-No obstante, su uso está pensado para emplearla con un frontend que renderice los incidentes en un mapa.
+La API es plenamente funcional, por ejemplo en modo local en http://localhost:3001/incidentes, no obstante, su uso está pensado para emplearla con un frontend que renderice los incidentes en un mapa.
 
 ## Colección en postman
 
