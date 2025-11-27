@@ -16,11 +16,3 @@ La API es plenamente funcional, por ejemplo en modo local en http://localhost:30
 ## Colección en postman
 
 Colección en postman
-
-## Créditos
-
-Proyecto Final de la Tecnicatura en Desarrollo de SOftware en la Universidad Tecnológica Nacional, a cargo de:
-
-- Jerónimo BALTIAN ORTIZ
-- Jimena MARTINEZ ARANA
-- Carlos Alberto ARCE

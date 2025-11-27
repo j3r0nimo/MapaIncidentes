@@ -49,3 +49,11 @@ El Prototipo cumple con los siguientes criterios
 - Manejo de tableros en Jira para la división de tareas.
 - Documentación del proyecto + Documentación de Repositorios (readme.md)
 - Estandarización del código (linter: prettier)
+
+## Créditos
+
+Proyecto Final de la Tecnicatura en Desarrollo de SOftware en la Universidad Tecnológica Nacional, a cargo de:
+
+- Jerónimo BALTIAN ORTIZ
+- Jimena MARTINEZ ARANA
+- Carlos Alberto ARCE
