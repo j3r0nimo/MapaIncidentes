@@ -10,22 +10,26 @@ La idea a desarrollar se centra en la recolección y visualización de incidente
 
 ## Limitaciones
 
-No se incluyen análisis estadístico avanzados ni predicciones de tendencias. Dichas tareas se consideran parte del trabajo de especialistas en cada campo, quienes podrán emplear esta herramienta como apoyo a su labor.
+No se incluyen análisis estadísticos avanzados ni predicciones de tendencias. Dichas tareas se consideran parte del trabajo de especialistas en cada campo, quienes podrán emplear esta herramienta como apoyo a su labor.
 
 ## API REST Mock
 
-En el estadío de "Prototipo" del proyectoZ, se trabaja en un Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando únicamente un archivo JSON para simular una base de datos.
+En el estadío actual de "Prototipo" del proyecto, se trabaja con Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando un archivo JSON para simular una base de datos.
 
 ## Instalación e inicio
 
-Por medio de una ventana de terminal en un editor de código, como ser Visual Studio Code, ubicados en la raíz, ejecutar los siguientes comandos:
+Por medio de una ventana de terminal en un editor de código, como ser Visual Studio Code y ubicados en la raíz, ejecutar los siguientes comandos:
 
 - npm install
-- npm run start
+- npm run mock
 
 La API es plenamente funcional, por ejemplo en modo local en http://localhost:3000/incidentes
 
 No obstante, su uso está pensado para emplearla con un frontend que renderice los incidentes en un mapa.
+
+## Colección en postman
+
+Colección en postman
 
 ## Créditos
 
