@@ -6,7 +6,11 @@ Desarrollar una aplicación web que permita visualizar, filtrar y representar gr
 
 ## Alcance
 
-La idea a desarrollar se centra en la recolección y visualización de incidentes viales registrados en el Partido de Coronel Rosales, en base a fuentes periodísticas y registros locales. Los datos incluyen el tramo de la Ruta Nac. 3 que llega hasta el sector de El Triángulo”, por su importancia como nexo conectivo con la ciudad de Bahía Blanca
+La idea a desarrollar se centra en la recolección y visualización de incidentes viales registrados en el Partido de Coronel Rosales, en base a fuentes periodísticas y registros locales. Los datos incluyen el tramo de la Ruta Nac. 3 que llega hasta el sector de El Triángulo”, por su importancia como nexo conectivo con la ciudad de Bahía Blanca.
+
+## Origen de datos
+
+Los datos de los incidentes viales se obtienen a partir de los incidentes viales informados por el sitio https://elrosalenio.com.ar/, el cual permite la reproducción de su contenido con la sola mención de la fuente.
 
 ## Limitaciones
 
@@ -19,8 +23,11 @@ El proyecto se presenta en la condición de "Prototipo", se lo desarrolló con N
 ## Arquitectura y diseño
 
 Se trata de un sitio web diseñado para ejecutarse como dos servicios paralelos, un backend y un frontend.
-El backend conforma una API que se relaciona con una base de datos, a fin de atender las solicitude del usuario del sitio.
-El frontend se encarga del renderizado de un mapa de la region del Partido de Coronel Rosales, con dos formatos para renderizar los datos, de presentar listas navegables de los incidentes y de facilitar el inicio de sesión al administrador del sitio, a fines de la carga y/o edición de los valores por incidente.
+
+- El backend conforma una API que se relaciona con una base de datos, a fin de atender las solicitude del usuario del sitio.
+- El frontend se encarga del renderizado de un mapa de la region del Partido de Coronel Rosales, con dos formatos para renderizar los datos, de presentar listas navegables de los incidentes y de facilitar el inicio de sesión al administrador del sitio, a fines de la carga y/o edición de los valores por incidente.
+- Las imágenes serán almacenadas en el servidor, por haber sido editadas para mejor visualización.
+- Las noticias serán accedidas desde el servidor del sitio de noticias.
 
 ## Entrega de prototipos
 
