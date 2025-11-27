@@ -52,7 +52,7 @@ El Prototipo cumple con los siguientes criterios
 
 ## Créditos
 
-Proyecto Final de la Tecnicatura en Desarrollo de SOftware en la Universidad Tecnológica Nacional, a cargo de:
+Proyecto Final de la Tecnicatura Universitaria en Programación, de la Universidad Tecnológica Nacional, a cargo de:
 
 - Jerónimo BALTIAN ORTIZ
 - Jimena MARTINEZ ARANA
