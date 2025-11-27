@@ -4,9 +4,13 @@
 
 Desarrollar una aplicación web que permita visualizar, filtrar y representar gráficamente los incidentes viales del Partido de Coronel Rosales.
 
-## Alcance y limitaciones
+## Alcance
 
-La idea a desarrollar se centra en la recolección y visualización de incidentes viales registrados en el Partido de Coronel Rosales, en base a fuentes periodísticas y registros locales. El sistema va a ofrecer una plataforma de exploración y representación gráfica de los datos, pero no incluye análisis estadístico avanzado ni predicciones de tendencias. Dichas tareas se consideran parte del trabajo de especialistas en cada campo, quienes podrán emplear esta herramienta como apoyo a su labor. Los datos incluyen el tramo de la Ruta Nac. 3 que llega hasta el sector de El Triángulo”, por su importancia como nexo conectivo con la ciudad de Bahía Blanca
+La idea a desarrollar se centra en la recolección y visualización de incidentes viales registrados en el Partido de Coronel Rosales, en base a fuentes periodísticas y registros locales. Los datos incluyen el tramo de la Ruta Nac. 3 que llega hasta el sector de El Triángulo”, por su importancia como nexo conectivo con la ciudad de Bahía Blanca
+
+## Limitaciones
+
+No se incluyen análisis estadístico avanzados ni predicciones de tendencias. Dichas tareas se consideran parte del trabajo de especialistas en cada campo, quienes podrán emplear esta herramienta como apoyo a su labor.
 
 ## API REST Mock
 
