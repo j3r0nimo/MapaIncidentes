@@ -14,7 +14,7 @@ No se incluyen análisis estadísticos avanzados ni predicciones de tendencias. 
 
 ## API REST Mock
 
-En el estadío actual de "Prototipo" del proyecto, se trabaja con Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando un archivo JSON para simular una base de datos.
+En el estadío actual de "Prototipo" que tiene el proyecto, se trabaja con Node.js y se emplea la librería json server, la cual permite crear una API REST completa y simulada, utilizando un archivo JSON para simular una base de datos.
 
 ## Instalación e inicio
 
