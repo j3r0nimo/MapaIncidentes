@@ -16,6 +16,12 @@ No se incluyen análisis estadísticos avanzados ni predicciones de tendencias. 
 
 El proyecto se presenta en la condición de "Prototipo", se lo desarrolló con Node.js y se emplea la librería json server para crear una API REST completa y simulada, utilizando un archivo JSON para simular una base de datos.
 
+## Arquitectura y diseño
+
+Se trata de un sitio web diseñado para ejecutarse como dos servicios paralelos, un backend y un frontend.
+El backend conforma una API que se relaciona con una base de datos, a fin de atender las solicitude del usuario del sitio.
+El frontend se encarga del renderizado de un mapa de la region del Partido de Coronel Rosales, con dos formatos para renderizar los datos, de presentar listas navegables de los incidentes y de facilitar el inicio de sesión al administrador del sitio, a fines de la carga y/o edición de los valores por incidente.
+
 ## Entrega de prototipos
 
 El Prototipo cumple con las siguientes condiciones:
