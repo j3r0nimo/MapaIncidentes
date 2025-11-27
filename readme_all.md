@@ -20,19 +20,19 @@ El proyecto se presenta en la condición de "Prototipo", se lo desarrolló con N
 
 El Prototipo cumple con las siguientes condiciones:
 
-o Frontend (Generación de un prototipo navegable, no funcional)
-o Backend (Utilización de mocks locales o mockapi.io)
-o Generación de documentación de los repositorios (README.md)
-o Generación de tickets o tareas por integrante en un tablero (Ej: Jira)
+- Frontend (Generación de un prototipo navegable, no funcional)
+- Backend (Utilización de mocks locales o mockapi.io)
+- Generación de documentación de los repositorios (README.md)
+- Generación de tickets o tareas por integrante en un tablero (Ej: Jira)
 
 ## Criterios de evaluación
 
 El Prototipo cumple con los siguientes criterios
 
-• Manejo de repositorios para ambos prototipos.
-• Configuración de servicios de deploy públicos del prototipo.
-• Simulación de entorno local de ambos repositorios
-• Colección en postman para pruebas contra la API
-• Manejo de tableros en Jira para la división de tareas.
-• Documentación del proyecto + Documentación de Repositorios (readme.md)
-• Estandarización del código (linter: prettier)
+- Manejo de repositorios para ambos prototipos.
+- Configuración de servicios de deploy públicos del prototipo.
+- Simulación de entorno local de ambos repositorios
+- Colección en postman para pruebas contra la API
+- Manejo de tableros en Jira para la división de tareas.
+- Documentación del proyecto + Documentación de Repositorios (readme.md)
+- Estandarización del código (linter: prettier)
