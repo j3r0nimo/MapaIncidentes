@@ -12,7 +12,7 @@ La idea a desarrollar se centra en la recolección y visualización de incidente
 
 No se incluyen análisis estadísticos avanzados ni predicciones de tendencias. Dichas tareas se consideran parte del trabajo de especialistas en cada campo, quienes podrán emplear esta herramienta como apoyo a su labor.
 
-## API REST Mock
+## Prototipo
 
 El proyecto se presenta en la condición de "Prototipo", se lo desarrolló con Node.js y se emplea la librería json server para crear una API REST completa y simulada, utilizando un archivo JSON para simular una base de datos.
 
