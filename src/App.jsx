@@ -7,13 +7,14 @@ import MapaClusterIncidentes from "./pages/MapaCluster";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginAdmin from "./pages/login";
 import NuevoIncidente from "./pages/administracion";
+import Inicio from "./pages/main";
 
 function App() {
   return (
     <Router>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/">Skynet Frontend</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">Incidentes viales</Navbar.Brand>
           
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           
@@ -30,7 +31,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<h2>Welcome to Skynet Frontend</h2>} />
+          <Route path="/" element={<Inicio />} />
           <Route path="/acceso-interno" element={<LoginAdmin />} />
           <Route path="/administracion" element={< NuevoIncidente/>} />
           <Route path="/incidentes" element={<IncidentesLista />} />

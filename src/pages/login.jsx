@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Importante para redireccionar sin recargar
 
-const LoginAdmin = () => {
+export default function LoginAdmin() {
   const [error, setError] = useState(""); // Para mostrar mensajes de error en pantalla
   const navigate = useNavigate();
 
@@ -72,5 +72,3 @@ const LoginAdmin = () => {
     </div>
   );
 };
-
-export default LoginAdmin;

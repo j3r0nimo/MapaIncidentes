@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Form, Button, Row, Col, Table, Container } from "react-bootstrap";
 
-const Administracion = () => {
+export default function Administracion() {
     const BASE_URL = "http://localhost:3001/incidentes";
     const [listaIncidentes, setListaIncidentes] = useState([]);
     const [idEdicion, setIdEdicion] = useState(null);
@@ -327,5 +327,3 @@ const Administracion = () => {
         </Container>
     );
 };
-
-export default Administracion;
