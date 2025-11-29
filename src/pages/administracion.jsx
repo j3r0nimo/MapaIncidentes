@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Form, Button, Row, Col, Table, Container } from "react-bootstrap";
+import { useNavigate } from 'react-router-dom';
 
 export default function Administracion() {
     const BASE_URL = "http://localhost:3001/incidentes";
@@ -26,7 +27,12 @@ export default function Administracion() {
 
     };
     const [datos, setDatos] = useState(datosIniciales);
-
+    const navigate = useNavigate()
+    useEffect(() => {
+        if (localStorage.getItem('isAdmin') !== 'true') {
+            navigate('/acceso-interno', { replace: true });
+        }
+    }, [navigate]);
     useEffect(() => {
         cargarIncidentes();
     }, []);
@@ -111,9 +117,25 @@ export default function Administracion() {
         cargarIncidentes();
         if (idEdicion === id) handleCancelarEdicion();
     };
-
+    const handleCerrar = async () => {
+        localStorage.removeItem('isAdmin');
+        localStorage.removeItem('adminName');
+        navigate('/acceso-interno', { replace: true });
+    }
     return (
         <Container fluid className="mt-4">
+            <Row md={6}>
+                <div>
+                    <Button
+                        variant="danger"
+                        size="sm"
+                        onClick={handleCerrar}
+                    >
+                        Cerrar sesion
+                    </Button>
+                </div>
+
+            </Row>
             <Row>
                 <Col md={5}>
                     <h3>Incidentes Existentes</h3>

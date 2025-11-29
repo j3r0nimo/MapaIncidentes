@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import IncidentesLista from "./components/IncidentesList";
+import IncidentesLista from "./pages/IncidentesList";
 import IncidenteDetalle from "./components/IncidenteDetail";
 import MapaJitterIncidentes from "./pages/MapaJitter";
 import MapaClusterIncidentes from "./pages/MapaCluster";

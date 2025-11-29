@@ -21,7 +21,7 @@ export default function LoginAdmin() {
         localStorage.setItem('isAdmin', 'true');
         localStorage.setItem('adminName', users[0].nombre);
 
-        navigate('/administracion');
+        navigate('/administracion',{replace: true});
       } else {
         setError("Usuario o contraseña incorrectos");
       }
