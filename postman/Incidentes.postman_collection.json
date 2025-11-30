@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "7a8c4ddd-9b8f-4ebb-a0a8-f0a24d0282b9",
+    "name": "Incidentes API (Mock JSON Server)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Incidentes",
+      "item": [
+        {
+          "name": "GET - All incidentes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3001/incidentes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes"]
+            }
+          }
+        },
+        {
+          "name": "GET - Incidente by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/incidentes/{{id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes", "{{id}}"]
+            }
+          }
+        },
+        {
+          "name": "POST - Create incidente",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2025-01-01T00:00:00.000Z\",\n  \"hora\": \"12:00\",\n  \"incidente\": \"nuevo\",\n  \"medio\": \"auto\",\n  \"vehiculo\": \"Vehiculo X\",\n  \"patente\": \"XXX000\",\n  \"ocupantes\": 1,\n  \"heridos\": 0,\n  \"fallecidos\": 0,\n  \"danios\": \"ninguno\",\n  \"direccion\": \"Calle Falsa 123\",\n  \"lugar\": \"calle\",\n  \"bomberos\": false,\n  \"posicion\": {\"lat\": -38.0, \"lng\": -62.0},\n  \"imagen\": null,\n  \"descripcion\": \"Incidente generado desde Postman\",\n  \"web\": null\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3001/incidentes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes"]
+            }
+          }
+        },
+        {
+          "name": "PUT - Update incidente (full)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fecha\": \"2025-01-01T00:00:00.000Z\",\n  \"hora\": \"12:00\",\n  \"incidente\": \"actualizado\",\n  \"medio\": \"auto\",\n  \"vehiculo\": \"Vehiculo Modificado\",\n  \"patente\": \"MOD123\",\n  \"ocupantes\": 2,\n  \"heridos\": 0,\n  \"fallecidos\": 0,\n  \"danios\": \"leves\",\n  \"direccion\": \"Nueva direccion\",\n  \"lugar\": \"ruta\",\n  \"bomberos\": false,\n  \"posicion\": {\"lat\": -38.1, \"lng\": -62.1},\n  \"imagen\": null,\n  \"descripcion\": \"Actualizado desde Postman\",\n  \"web\": null\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3001/incidentes/{{id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes", "{{id}}"]
+            }
+          }
+        },
+        {
+          "name": "PATCH - Partial update incidente",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \"descripcion\": \"Descripción corregida desde PATCH\" }"
+            },
+            "url": {
+              "raw": "http://localhost:3001/incidentes/{{id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes", "{{id}}"]
+            }
+          }
+        },
+        {
+          "name": "DELETE - Incidente",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:3001/incidentes/{{id}}",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["incidentes", "{{id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admins",
+      "item": [
+        {
+          "name": "GET - All admins",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:3001/admins",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["admins"]
+            }
+          }
+        },
+        {
+          "name": "POST - Mock login (json-server filtering)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3001/admins?username=admin&password=123",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3001",
+              "path": ["admins"],
+              "query": [
+                { "key": "username", "value": "admin" },
+                { "key": "password", "value": "123" }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "id", "value": "" }
+  ]
+}
