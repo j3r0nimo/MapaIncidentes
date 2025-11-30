@@ -3,18 +3,14 @@
 ## API REST Mock
 
 Este backend implementa una API REST mock utilizando Node.js y la librería JSON Server.
-La API simula una base de datos mediante un archivo db.json y expone endpoints para consultar, crear, modificar y eliminar incidentes viales registrados en el Partido de Coronel Rosales. Su objetivo es servir como backend temporal para el desarrollo del frontend y futuras integraciones.
 
 ## Tecnologías utilizadas
 
 - Node.js
 - JSON Server
-- Nodemon (para recarga automática, si corresponde)
-- npm scripts
 
 ## Instalación e inicio
 
-- Clonar el repositorio del backend (o descargar el código fuente)
 - git clone https://github.com/j3r0nimo/MapaIncidentes.git
 - cd backend
 - npm install
