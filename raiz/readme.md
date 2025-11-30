@@ -15,7 +15,7 @@ Instrucciones para inciar los dos servicios
 - npm run mock
 - La API estará disponible en http://localhost:3001
 
-## Instalación e inicio del Frontend
+## Instalación e inicio Frontend
 
 - npm install: para la instalacion de dependencias
 - npm run dev: para el arranque del sitio en la url http://localhost:5173/
