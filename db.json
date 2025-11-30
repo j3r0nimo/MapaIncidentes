@@ -25,7 +25,9 @@
       "__v": 0,
       "createdAt": "2025-09-29T21:34:38.580Z",
       "updatedAt": "2025-09-29T21:34:38.580Z",
-      "imagenUrl": "https://elrosalenio.com.ar/upload/2019/1_p1gh43rttd18je1ov91mpseiq7fv3.jpg"
+      "imagenUrl": "https://elrosalenio.com.ar/upload/2019/1_p1gh43rttd18je1ov91mpseiq7fv3.jpg",
+      "lat": -38.880991,
+      "lng": -62.07404
     },
     {
       "id": "68dafb6ee2618c34f471d04e",
@@ -200,7 +202,7 @@
       "ocupantes": 1,
       "heridos": 1,
       "fallecidos": 0,
-      "danios": "serios",
+      "danios": "livianos",
       "direccion": "Diagonal Sarmiento y Chacabuco",
       "lugar": "esquina",
       "bomberos": false,
@@ -214,7 +216,9 @@
       "__v": 0,
       "createdAt": "2025-09-29T21:34:38.581Z",
       "updatedAt": "2025-09-29T21:34:38.581Z",
-      "imagenUrl": "https://elrosalenio.com.ar/upload/2019/1_p1fuoji3h51elj1h6es6b1s181fhb3.jpg"
+      "imagenUrl": "https://elrosalenio.com.ar/upload/2019/1_p1fuoji3h51elj1h6es6b1s181fhb3.jpg",
+      "lat": -38.889251,
+      "lng": -62.060063
     },
     {
       "id": "68dafb6ee2618c34f471d05c",
