@@ -27,3 +27,9 @@ Permite probar todos los endpoints del backend mock.
 
 Para importarla en Postman:  
 _File → Import → Collection → Seleccionar archivo JSON._
+
+## Integrantes del Grupo 14
+
+- Carlos Alberto Arce
+- Jimena Martinez Arana
+- Jeronimo Baltian Ortiz
